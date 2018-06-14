@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Container from '../components/container'
 
 const IndexPage = () => (
-  <div style={{ margin: '3rem auto', maxWidth: 600 }}>
+  <Container>
     <div>
       <h1>Richard Hamming on Luck</h1>
       <div>
@@ -15,7 +16,7 @@ const IndexPage = () => (
           <p>
             There is indeed an element of luck, and no, there isn’t. The
             prepared mind sooner or later finds something important and does it.
-            So yes, it is luck.{' '}
+            So yes, it is luck.
             <em>
               The particular thing you do is luck, but that you do something is
               not.
@@ -26,7 +27,7 @@ const IndexPage = () => (
       <p>Posted April 09, 2011</p>
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  </Container>
 )
 
 export default IndexPage
