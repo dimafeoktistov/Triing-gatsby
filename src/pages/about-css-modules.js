@@ -2,7 +2,6 @@ import React from 'react'
 
 import Container from '../components/container.js'
 import styles from './about-css-modules.module.css'
-console.log(styles)
 
 const User = props => (
   <div className={styles.user}>
