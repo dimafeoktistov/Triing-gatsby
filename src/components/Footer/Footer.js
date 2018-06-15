@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
       <div className={styles.copy}>
         <div className={styles.copyright}>
-          Feel free to drop me a message at any of my social networks.
+          Copyright &copy; 2018 Dima Feoktistov
         </div>
         <div className={styles.social}>
           <a
