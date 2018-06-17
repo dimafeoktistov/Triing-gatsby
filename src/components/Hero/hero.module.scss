@@ -1,23 +1,24 @@
 @import '../../utils/scss_variables/colorVariables';
-
 $shadow: rgba(204, 204, 223, .5);
 
 .hero {
   align-items: center;
-  background-image: url('../img/background-image.png');
+  background-image: url('../../assets/photos/background-image.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
+  height: 90vh;
+  justify-content: center;
   min-height: 600px;
 }
 
-.hero-text {
+.herotext {
+  align-items: center;
   color: $white;
   text-align: center;
 
   h1 {
+    color: $white;
     font-size: 60px;
     margin: .5rem;
   }
@@ -25,9 +26,9 @@ $shadow: rgba(204, 204, 223, .5);
   span {
     ::before {
       background-color: $white;
-      content: '';
+      content: '/';
       display: inline-block;
-      height: 1px;
+      height: 2px;
       margin-right: 10px;
       vertical-align: middle;
       width: 20px;
@@ -35,9 +36,9 @@ $shadow: rgba(204, 204, 223, .5);
 
     ::after {
       background-color: $white;
-      content: '';
+      content: '/';
       display: inline-block;
-      height: 1px;
+      height: 2px;
       margin-left: 10px;
       vertical-align: middle;
       width: 20px;
@@ -48,28 +49,20 @@ $shadow: rgba(204, 204, 223, .5);
 .arrow {
   align-items: center;
   display: flex;
-  height: 20vh;
+  height: 10vh;
   justify-content: center;
 }
 
-.arrow-down {
+.arrowdown {
   background-color: $white;
   border-radius: 50%;
   box-shadow: 0 0 18.69px 2.31px;
   height: 50px;
-  line-height: 55px;
+  line-height: 50px;
   text-align: center;
   width: 50px;
-}
 
-.button {
-  border: 1px solid $white;
-  border-radius: 100px;
-  margin-right: 10px;
-  padding: 10px 20px;
-
-  :hover {
-    background-color: $white;
-    color: $black;
+  img {
+    margin-bottom: 0;
   }
 }

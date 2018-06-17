@@ -3,22 +3,8 @@ import Link from 'gatsby-link'
 import styles from './header.module.scss'
 import avatar from '../../assets/photos/1.jpg'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={styles.header}>
-    <div className={styles.top}>
-      <img
-        src={avatar}
-        alt="avatar of dima feoktistov"
-        className={styles.avatar}
-      />
-      <div className={styles.description}>
-        <h1 className={styles.title}>
-          <Link className={styles.title} to="/">
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
-    </div>
     <nav>
       <ul className={styles.navigation}>
         <Link className={styles.link} to="/">
@@ -36,3 +22,19 @@ const Header = ({ siteTitle }) => (
 )
 
 export default Header
+
+//  Old styles
+// <div className={styles.top}>
+//   <img
+//     src={avatar}
+//     alt="avatar of dima feoktistov"
+//     className={styles.avatar}
+//   />
+//   <div className={styles.description}>
+//     <h1 className={styles.title}>
+//       <Link className={styles.title} to="/">
+//         {siteTitle}
+//       </Link>
+//     </h1>
+//   </div>
+// </div>
