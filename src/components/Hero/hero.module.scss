@@ -1,0 +1,75 @@
+@import '../../utils/scss_variables/colorVariables';
+
+$shadow: rgba(204, 204, 223, .5);
+
+.hero {
+  align-items: center;
+  background-image: url('../img/background-image.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  min-height: 600px;
+}
+
+.hero-text {
+  color: $white;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+    margin: .5rem;
+  }
+
+  span {
+    ::before {
+      background-color: $white;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 20px;
+    }
+
+    ::after {
+      background-color: $white;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      margin-left: 10px;
+      vertical-align: middle;
+      width: 20px;
+    }
+  }
+}
+
+.arrow {
+  align-items: center;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+}
+
+.arrow-down {
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: 0 0 18.69px 2.31px;
+  height: 50px;
+  line-height: 55px;
+  text-align: center;
+  width: 50px;
+}
+
+.button {
+  border: 1px solid $white;
+  border-radius: 100px;
+  margin-right: 10px;
+  padding: 10px 20px;
+
+  :hover {
+    background-color: $white;
+    color: $black;
+  }
+}

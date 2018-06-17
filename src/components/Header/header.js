@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from './header.module.css'
+import styles from './header.module.scss'
 import avatar from '../../assets/photos/1.jpg'
 
 const Header = ({ siteTitle }) => (
@@ -17,13 +17,6 @@ const Header = ({ siteTitle }) => (
             {siteTitle}
           </Link>
         </h1>
-        {/*<p>
-          Hello everyone! I am experiencied biologist and not very experiencied
-          web-deleoper at the moment. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Ea dolores fuga quaerat quisquam minima eum,
-          laborum, delectus cumque voluptatibus officia reprehenderit veritatis
-          non atque aperiam quod corrupti culpa ab voluptates!
-        </p>*/}
       </div>
     </div>
     <nav>

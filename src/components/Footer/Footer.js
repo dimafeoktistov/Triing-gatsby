@@ -3,7 +3,7 @@ import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official'
 import FaGooglePlusSquare from 'react-icons/lib/fa/google-plus-square'
 import FaVk from 'react-icons/lib/fa/vk'
 import FaGithub from 'react-icons/lib/fa/github'
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
