@@ -14,17 +14,12 @@ class Header extends React.Component {
   componentDidMount() {
     let previous = window.scrollY
     Observable.fromEvent(window, 'scroll')
-      .debounceTime(10)
+      .debounceTime(50)
       .subscribe(e => {
-        console.log('this.state.isFloat', this.state.isFloat)
-        if (window.scrollY > 2) {
-          window.scrollY > previous
-            ? this.setState({ isFloat: true })
-            : this.setState({ isFloat: false })
-          previous = window.scrollY
-        } else {
-          this.setState({ isFloat: false })
-        }
+        window.scrollY > previous
+          ? this.setState({ isFloat: true })
+          : this.setState({ isFloat: false })
+        previous = window.scrollY
       })
   }
 
@@ -56,19 +51,3 @@ class Header extends React.Component {
 }
 
 export default Header
-
-//  Old styles
-// <div className={styles.top}>
-//   <img
-//     src={avatar}
-//     alt="avatar of dima feoktistov"
-//     className={styles.avatar}
-//   />
-//   <div className={styles.description}>
-//     <h1 className={styles.title}>
-//       <Link className={styles.title} to="/">
-//         {siteTitle}
-//       </Link>
-//     </h1>
-//   </div>
-// </div>

@@ -8,30 +8,12 @@
   width: 100%;
   transition:transform 0.3s ease-out;
   height: auto;
-  transform:scaleY(1); 
+  transform:scaleY(1);
   transform-origin:top;
 }
 
 .moving {
   transform:scaleY(0); // *squish*
-}
-
-.title {
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
-.top {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.avatar {
-  height: auto;
-  margin: 0;
-  max-width: 400px;
-  width: 100%;
 }
 
 .navigation {
