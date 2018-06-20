@@ -1,26 +1,31 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Portfolio site with gatsby
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+This repository serves two purposes. I am making my portfolio website and practising my skills in React.js, Gatsby, GraphQL, RxJS and HTML5 with SCSS. At the present moment it is not fully developed, so it's under construction.
 
 ## Install
 
-Make sure that you have the Gatsby CLI program installed:
+To start developing and install the site you should clone this repo with command:
+
 ```sh
-npm install --global gatsby-cli
+git clone https://github.com/dimafeoktistov/Triing-gatsby.git
 ```
 
-And run from your CLI:
+CD into the directory. Then install dependencies with npm or yarn (preferably):
+
 ```sh
-gatsby new gatsby-example-site
+yarn install
 ```
 
 Then you can run it by:
+
 ```sh
-cd gatsby-example-site
 gatsby develop
 ```
 
-## Deploy
+## Live version
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+To check out live version click - [here](https://eager-bassi-4c8035.netlify.com/)
+
+## Features
+
+So far I installed typography.js into the project, SCSS, and made header animation that appear when you scrolling up and dissapper when you scrolling down.
