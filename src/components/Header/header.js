@@ -5,6 +5,7 @@ import avatar from '../../assets/photos/1.jpg'
 import { Observable } from 'rxjs/Observable'
 import 'rxjs/add/observable/fromEvent'
 import 'rxjs/add/operator/debounceTime'
+import logo from '../../assets/svg/logo.png'
 
 class Header extends React.Component {
   state = {
@@ -32,6 +33,11 @@ class Header extends React.Component {
     }
     return (
       <header className={headerStyles.join(' ')}>
+        <div className={styles.title}>
+          <img className={styles.logo} src={logo} alt="logo" />
+          <Link to="/">Dima Feoktistov - Ph.D.</Link>
+        </div>
+
         <nav>
           <ul className={styles.navigation}>
             <Link className={styles.link} to="/">
