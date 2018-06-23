@@ -7,9 +7,8 @@ $shadow: rgba(204, 204, 223, .5);
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
-  min-height: 600px;
 }
 
 .herotext {
@@ -24,9 +23,9 @@ $shadow: rgba(204, 204, 223, .5);
   }
 
   span {
-    ::before {
+    &::before {
       background-color: $white;
-      content: '/';
+      content: '';
       display: inline-block;
       height: 2px;
       margin-right: 10px;
@@ -34,9 +33,9 @@ $shadow: rgba(204, 204, 223, .5);
       width: 20px;
     }
 
-    ::after {
+    &::after {
       background-color: $white;
-      content: '/';
+      content: '';
       display: inline-block;
       height: 2px;
       margin-left: 10px;
