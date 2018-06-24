@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header/header'
+import Header from '../containers/Header/header'
 import Footer from '../components/Footer/Footer'
 import Aux from '../HOCS/Aux.js'
 
