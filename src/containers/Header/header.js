@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './header.module.scss'
-import avatar from '../../assets/photos/1.jpg'
 import { Observable } from 'rxjs/Observable'
 import 'rxjs/add/observable/fromEvent'
 import 'rxjs/add/operator/debounceTime'
 import logo from '../../assets/svg/logo.png'
+
+import Navlinks from '../../components/NavLinks/navlinks'
 
 class Header extends React.Component {
   state = {
@@ -37,20 +38,7 @@ class Header extends React.Component {
           <img className={styles.logo} src={logo} alt="logo" />
           <Link to="/">Dima Feoktistov - Ph.D.</Link>
         </div>
-
-        <nav>
-          <ul className={styles.navigation}>
-            <Link className={styles.link} to="/">
-              Home
-            </Link>
-            <Link className={styles.link} to="/about/">
-              About
-            </Link>
-            <Link className={styles.link} to="/contact/">
-              Contact
-            </Link>
-          </ul>
-        </nav>
+        <Navlinks />
       </header>
     )
   }
