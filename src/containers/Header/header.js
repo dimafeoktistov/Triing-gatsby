@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './header.module.scss'
-import { Observable } from 'rxjs/Observable'
-import 'rxjs/add/observable/fromEvent'
 import 'rxjs/add/operator/debounceTime'
 import logo from '../../assets/svg/logo.png'
 
 import Navlinks from '../../components/NavLinks/navlinks'
+
+import scroll$ from '../../utils/observables/observables'
 
 class Header extends React.Component {
   state = {
@@ -15,14 +15,13 @@ class Header extends React.Component {
 
   componentDidMount() {
     let previous = window.scrollY
-    Observable.fromEvent(window, 'scroll')
-      .debounceTime(50)
-      .subscribe(e => {
-        window.scrollY > previous
-          ? this.setState({ isFloat: true })
-          : this.setState({ isFloat: false })
-        previous = window.scrollY
-      })
+    // Observable.fromEvent(window, 'scroll')
+    scroll$.debounceTime(50).subscribe(e => {
+      window.scrollY > previous
+        ? this.setState({ isFloat: true })
+        : this.setState({ isFloat: false })
+      previous = window.scrollY
+    })
   }
 
   render() {
