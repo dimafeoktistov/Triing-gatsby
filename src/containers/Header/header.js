@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './header.module.scss'
 import 'rxjs/add/operator/debounceTime'
-import logo from '../../assets/svg/logo.png'
 
 import Navlinks from '../../components/NavLinks/navlinks'
 
@@ -33,7 +32,6 @@ class Header extends React.Component {
     return (
       <header className={headerStyles.join(' ')}>
         <div className={styles.title}>
-          <img className={styles.logo} src={logo} alt="logo" />
           <Link to="/">Dima Feoktistov - Ph.D.</Link>
         </div>
         <Navlinks />
