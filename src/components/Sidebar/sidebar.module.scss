@@ -1,0 +1,15 @@
+.sidebar {
+    width: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    div {
+        width: 90%;
+        height: 3px;
+        background-color: black;
+    }
+}
