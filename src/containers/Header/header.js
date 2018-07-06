@@ -3,8 +3,6 @@ import Link from 'gatsby-link'
 import styles from './header.module.scss'
 import Navlinks from '../../components/NavLinks/navlinks'
 
-import React from 'react'
-
 const Header = (props) => {
   let headerStyles
   if (!props.isFloat) {
