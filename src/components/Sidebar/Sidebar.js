@@ -3,18 +3,18 @@ import React from 'react'
 import Navlinks from '../NavLinks/navlinks'
 import classes from './Sidebar.module.scss'
 import Backdrop from '../UI/Backdrop/Backdrop'
-import Aux from '../../HOCS/Aux'
+// import div from '../../HOCS/Aux'
 
 const sideBar = props => {
-  let attachedClasses = [classes.SideDrawer, classes.Close]
+  let attachedClasses = [classes.sideBar, classes.close]
   if (props.open) {
-    attachedClasses = [classes.SideDrawer, classes.Open]
+    attachedClasses = [classes.sideBar, classes.open]
   }
   return (
     <div>
       <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(' ')}>
-        <Navlinks />
+        <Navlinks active={true} clicked={props.closed} />
       </div>
     </div>
   )

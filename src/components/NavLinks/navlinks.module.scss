@@ -1,18 +1,29 @@
 .navigation {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    flex-direction: column;
+    @media (min-width: 500px) {
+        flex-direction: row;
+    }
 }
 
 .link {
-  color: black;
-  padding: 10px 15px;
-  border-radius: 50px;
-
-  &:hover {
-    background-color: red;
-    color: white;
-  }
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    &:hover {
+        background-color: red;
+        color: white;
+    }
+    &:active {
+        background: rgb(116, 233, 20);
+        color: white;
+    }
+    &.active {
+        background: rgb(116, 233, 20);
+        color: white;
+    }
 }

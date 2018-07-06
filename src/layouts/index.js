@@ -63,7 +63,7 @@ export default class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
         />
-        <div>{children()}</div>
+        <Aux>{children()}</Aux>
         <Footer />
       </div>
     )

@@ -1,0 +1,17 @@
+.navlink {
+  color: black;
+  padding: 10px 15px;
+  border-radius: 50px;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+  &:active {
+    background: rgb(116, 233, 20);
+    color: white;
+  }
+  &.active {
+    background: rgb(116, 233, 20);
+    color: white;
+  }
+}
