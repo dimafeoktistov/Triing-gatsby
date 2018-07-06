@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './header.module.scss'
-import Navlinks from '../../components/NavLinks/navlinks'
+import Navlinks from '../NavLinks/navlinks'
+import SidebarButton from '../Sidebar/sidebarButton'
 
-const Header = (props) => {
+const Header = props => {
   let headerStyles
-  if (!props.isFloat) {
+  if (!props.floating) {
     headerStyles = [styles.header]
   } else {
     headerStyles = [styles.header, styles.moving]
@@ -16,7 +17,10 @@ const Header = (props) => {
         <div className={styles.title}>
           <Link to="/">Dima Feoktistov - Ph.D.</Link>
         </div>
-        <Navlinks />
+        <nav className={styles.desktopOnly}>
+          <Navlinks />
+        </nav>
+        <SidebarButton drawerToggleClicked={props.drawerToggleClicked} />
       </header>
     </div>
   )

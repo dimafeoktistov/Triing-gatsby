@@ -1,22 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navlinks.module.scss'
+import Navlink from './NavLink/Navlink'
+
+//Included props called active to indicate active page
 
 const Navlinks = props => {
   return (
-    <nav>
-      <ul className={styles.navigation}>
-        <Link className={styles.link} to="/">
-          Home
-        </Link>
-        <Link className={styles.link} to="/about/">
-          About
-        </Link>
-        <Link className={styles.link} to="/contact/">
-          Contact
-        </Link>
-      </ul>
-    </nav>
+    <ul className={styles.navigation}>
+      <Navlink to="/" clicked={props.clicked}>
+        Home
+      </Navlink>
+      <Navlink to="/about" clicked={props.clicked}>
+        About
+      </Navlink>
+      <Navlink to="/contacts" clicked={props.clicked}>
+        Contact
+      </Navlink>
+    </ul>
   )
 }
 
