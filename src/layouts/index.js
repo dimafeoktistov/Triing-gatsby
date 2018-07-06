@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../containers/Header/header'
 import Footer from '../components/Footer/Footer'
 import Aux from '../HOCS/Aux.js'
+import { Observable } from 'rxjs/Observable'
+import 'rxjs/add/observable/fromEvent'
+import 'rxjs/add/operator/debounceTime'
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
+export default class Layout extends Component {
+  state = {
+    isFloat: false,
+  }
+
+  componentDidMount() {
+    let previous = window.scrollY
+    Observable.fromEvent(window, 'scroll').debounceTime(50).subscribe(e => {
+      window.scrollY > previous
+        ? this.setState({ isFloat: true })
+        : this.setState({ isFloat: false })
+      previous = window.scrollY
+    })
+  }
+
+  render() {
+    const { children, data } = this.props;
+    return (
+      <div>
+        <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Dmitriy Feoktistov personal page' },
@@ -18,17 +38,17 @@ const Layout = ({ children, data }) => (
         },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header floating={this.state.isFloat} />
     <Aux>{children()}</Aux>
     <Footer />
-  </div>
-)
+      </div>
+    )
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
 }
-
-export default Layout
 
 export const query = graphql`
   query SiteTitleQuery {
