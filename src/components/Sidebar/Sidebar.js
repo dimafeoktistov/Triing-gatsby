@@ -3,7 +3,6 @@ import React from 'react'
 import Navlinks from '../NavLinks/navlinks'
 import classes from './Sidebar.module.scss'
 import Backdrop from '../UI/Backdrop/Backdrop'
-// import div from '../../HOCS/Aux'
 
 const sideBar = props => {
   let attachedClasses = [classes.sideBar, classes.close]

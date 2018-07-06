@@ -1,4 +1,5 @@
 @import '../../utils/scss_variables/colorVariables';
+@import '../../utils/scss_variables/media';
 .header {
     align-items: center;
     background-color: $white;
@@ -32,7 +33,7 @@
 }
 
 .desktopOnly {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 }
