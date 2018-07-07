@@ -71,7 +71,8 @@ export default class Layout extends Component {
 }
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export const query = graphql`
