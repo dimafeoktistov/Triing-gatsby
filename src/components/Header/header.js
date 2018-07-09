@@ -14,13 +14,15 @@ const Header = props => {
   return (
     <div>
       <header className={headerStyles.join(' ')}>
-        <div className={styles.title}>
-          <Link to="/">Dima Feoktistov - Ph.D.</Link>
+        <div className={styles.widthFix}>
+          <div className={styles.title}>
+            <Link to="/">Dima Feoktistov - Ph.D.</Link>
+          </div>
+          <nav className={styles.desktopOnly}>
+            <Navlinks />
+          </nav>
+          <SidebarButton drawerToggleClicked={props.drawerToggleClicked} />
         </div>
-        <nav className={styles.desktopOnly}>
-          <Navlinks />
-        </nav>
-        <SidebarButton drawerToggleClicked={props.drawerToggleClicked} />
       </header>
     </div>
   )
