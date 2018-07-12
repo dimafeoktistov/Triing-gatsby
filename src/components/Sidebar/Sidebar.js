@@ -10,12 +10,12 @@ const sideBar = props => {
     attachedClasses = [classes.sideBar, classes.open]
   }
   return (
-    <div>
+    <aside>
       <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(' ')}>
         <Navlinks active={true} clicked={props.closed} />
       </div>
-    </div>
+    </aside>
   )
 }
 
