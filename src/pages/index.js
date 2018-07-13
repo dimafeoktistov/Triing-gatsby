@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Container from '../components/container'
 import Hero from '../components/Hero/hero'
-import Aux from '../HOCS/Aux.js'
 
 const IndexPage = () => (
   <main>
