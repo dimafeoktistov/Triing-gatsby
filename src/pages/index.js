@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Container from '../components/container'
 import Hero from '../components/Hero/hero'
 import styles from './index.module.scss'
+import ProjectBtn from '../components/UI/buttons/projectBtn'
 
 const IndexPage = () => (
   <main>
@@ -24,13 +25,14 @@ const IndexPage = () => (
               <h3>Number guesser</h3>
               <p>Number guessing game.</p>
               <p>
-                <a
-                  href="https://dimafeoktistov.github.io/number-guesser/"
-                  target="_blank"
-                  className={styles.projectBtn}
-                >
-                  Go!
-                </a>
+                <ProjectBtn>
+                  <a
+                    href="https://dimafeoktistov.github.io/number-guesser/"
+                    target="_blank"
+                  >
+                    Go!
+                  </a>
+                </ProjectBtn>
                 <Link className={styles.projectBtn} to="page-2">
                   More info
                 </Link>
