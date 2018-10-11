@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Aux from '../HOCS/Aux'
 
 const SecondPage = () => (
   <div>

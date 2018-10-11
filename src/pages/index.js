@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 import Container from '../components/container'
 import Hero from '../components/Hero/hero'
 import styles from './index.module.scss'
-import ProjectBtn from '../components/UI/buttons/projectBtn'
+import guideToTomskPng from '../assets/photos/guide-to-tomsk.png'
+import loanCalculator from '../assets/photos/loan-calculator.png'
+import arcadeGameClone from '../assets/photos/arcade.png'
 
 const IndexPage = () => (
   <main>
@@ -17,23 +19,23 @@ const IndexPage = () => (
         </div>
         <div className={styles.projects}>
           <div className={styles.project}>
-            <img
-              src="img/number-guesser.png"
-              alt="screenshot of number guesser project"
-            />
+            <img src={guideToTomskPng} alt="guide to Tomsk city" />
             <div className={styles.description}>
-              <h3>Number guesser</h3>
-              <p>Number guessing game.</p>
+              <h3>Guide to Tomsk city</h3>
               <p>
-                <ProjectBtn>
-                  <a
-                    href="https://dimafeoktistov.github.io/number-guesser/"
-                    target="_blank"
-                  >
-                    Go!
-                  </a>
-                </ProjectBtn>
-                <Link className={styles.projectBtn} to="page-2">
+                A small front-end only app that represents points of interests
+                in Tomsk on google maps. It uses Google Maps API and Foursquare
+                API.
+              </p>
+              <p>
+                <a
+                  href="https://udacity-neibourhood-map.firebaseapp.com/"
+                  target="_blank"
+                  className={styles.projectBtn}
+                >
+                  Go!
+                </a>
+                <Link to="page-2" className={styles.projectBtn}>
                   More info
                 </Link>
               </p>
@@ -41,11 +43,13 @@ const IndexPage = () => (
           </div>
           <div className={styles.project}>
             <img
-              src="img/loan-calculator.png"
+              src={loanCalculator}
               alt="screenshot of loan calculator project"
             />
             <h3>Loan calculator</h3>
-            <p>Calculator of loan percentages.</p>
+            <p>
+              Calculator of loan percentages. Vanilla javascript and Bootstrap.
+            </p>
             <p>
               <a
                 href="https://dimafeoktistov.github.io/loancalculator/"
@@ -57,15 +61,12 @@ const IndexPage = () => (
             </p>
           </div>
           <div className={styles.project}>
-            <img
-              src="img/chuck-norris.png"
-              alt="screenshot of Chuck Norris joke project"
-            />
-            <h3>Chuck Norris Joke Generator</h3>
-            <p>Generator of the jokes about Chuck Norris with AJAX api.</p>
+            <img src={arcadeGameClone} alt="clone of classic arcade game" />
+            <h3>Clone of classic arcade game</h3>
+            <p>Made on canvas, Vanilla javascript, Bootstrap.</p>
             <p>
               <a
-                href="https://dimafeoktistov.github.io/chucknorris/"
+                href="https://dimafeoktistov.github.io/arcade-game-clone/"
                 target="_blank"
                 className={styles.projectBtn}
               >
