@@ -1,7 +1,9 @@
-import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official'
-import FaGooglePlusSquare from 'react-icons/lib/fa/google-plus-square'
-import FaVk from 'react-icons/lib/fa/vk'
-import FaGithub from 'react-icons/lib/fa/github'
+import {
+  FaFacebookSquare,
+  FaGooglePlusSquare,
+  FaVk,
+  FaGithub,
+} from 'react-icons/fa'
 
 import React from 'react'
 import styles from './SocialNetworks.module.scss'
@@ -14,7 +16,7 @@ export default props => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaFacebookOfficial />
+        <FaFacebookSquare />
       </a>
       <a
         href="https://plus.google.com/u/0/102416570922874443146"
@@ -29,7 +31,7 @@ export default props => {
         rel="noopener noreferrer"
       >
         <FaVk />
-      </a>{' '}
+      </a>
       <a
         href="https://github.com/dimafeoktistov"
         target="_blank"

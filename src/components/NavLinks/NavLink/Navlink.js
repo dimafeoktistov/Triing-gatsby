@@ -1,11 +1,10 @@
 import Link from 'gatsby-link'
-import React from 'react'
+import React, { Fragment } from 'react'
 import styles from './navlink.module.scss'
-import Aux from '../../../HOCS/Aux'
 
 const Navlink = props => {
   return (
-    <Aux>
+    <Fragment>
       <Link
         className={props.active ? styles.active : styles.navlink}
         to={props.to}
@@ -13,7 +12,7 @@ const Navlink = props => {
       >
         {props.children}
       </Link>
-    </Aux>
+    </Fragment>
   )
 }
 

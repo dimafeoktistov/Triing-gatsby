@@ -26,6 +26,7 @@ const Projects = () => {
               <a
                 href="https://udacity-neibourhood-map.firebaseapp.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.projectBtn}
               >
                 Go!
@@ -49,6 +50,7 @@ const Projects = () => {
             <a
               href="https://dimafeoktistov.github.io/loancalculator/"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.projectBtn}
             >
               Go!
@@ -63,6 +65,7 @@ const Projects = () => {
             <a
               href="https://dimafeoktistov.github.io/arcade-game-clone/"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.projectBtn}
             >
               Go!
