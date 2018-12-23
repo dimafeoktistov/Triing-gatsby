@@ -11,5 +11,19 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    'gatsby-plugin-catch-links',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts',
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [],
+      },
+    },
   ],
 }
